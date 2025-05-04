@@ -17,7 +17,6 @@ import 'package:product_tracking/features/user/controller/user_controller.dart';
 import '../../features/auth/login/data/data_source/login_service.dart';
 import '../../features/home/data/service/product_service.dart';
 import '../../features/home/presentation/controller/product_search_controller.dart';
-import '../services/payment/payment_service.dart';
 
 Future<void> configureDependencies() async {
   await Future.wait([_configureServices(), _configureControllers()]);
@@ -26,7 +25,6 @@ Future<void> configureDependencies() async {
 Future<void> _configureServices() async {
   DioService.init(baseUrl: ApiConstants.baseUrl);
   SecureStorageService.init();
-  PaymentService.init();
   await AppCacheService.init();
   await Get.putAsync<AppThemeController>(() async {
     final controller = AppThemeController();

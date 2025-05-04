@@ -2,7 +2,6 @@ import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
-import 'package:product_tracking/core/services/payment/payment_service.dart';
 import 'package:product_tracking/core/theme/data/app_colors.dart';
 import 'package:product_tracking/core/widgets/buttons/app_default_button.dart';
 import 'package:product_tracking/core/widgets/spacing/horizontal_space.dart';
@@ -91,16 +90,9 @@ class MyCartPage extends StatelessWidget {
                 AppDefaultButton(
                     text: 'Checkout',
                     onPressed: () {
-                      PaymentService.makePayment(
-                        controller.myCart!.total.toInt(),
-                        'USD',
-                      ).then((value) {
-                        if (value.isRight()) {
-                          AppResultDialog.success(
-                            msg: 'Transaction made successfully',
-                          );
-                        }
-                      });
+                      AppResultDialog.success(
+                        msg: 'Transaction made successfully',
+                      );
                     })
               ],
             ),
