@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:meal_tracking/core/theme/data/app_colors.dart';
-import 'package:meal_tracking/core/theme/data/app_text_style.dart';
+import 'package:product_tracking/core/theme/data/app_colors.dart';
+import 'package:product_tracking/core/theme/data/app_text_style.dart';
 
 class AppFormField extends StatelessWidget {
   const AppFormField({
@@ -73,67 +73,66 @@ class AppFormField extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  TextFormField(
-        textDirection: textDirection,
-        textInputAction: TextInputAction.done,
-        keyboardType: keyboardType,
-        expands: expands ?? false,
-        autovalidateMode: AutovalidateMode.onUserInteraction,
-        onTap: onTap,
-        controller: controller,
-        onChanged: onChanged,
-        minLines: minLines,
-        maxLines: maxLines,
-        readOnly: readOnly ?? false,
-        enabled: enabled,
-        maxLength: maxLength,
-        textAlignVertical: TextAlignVertical.center,
-        textAlign: textAlign ?? TextAlign.start,
-        cursorColor: AppColors.primary,
-        decoration: InputDecoration(
-          helperText: helperText,
-          hintStyle: AppTextStyles.hintStyle(context),
-          isCollapsed: collapsed ?? true,
-          errorStyle: AppTextStyles.font14RegularText(context)
-              .copyWith(color: Colors.red),
-          labelText: labelText,
-          contentPadding: contentPadding ??
-              EdgeInsets.symmetric(horizontal: 8.w, vertical: 8.w),
-          focusedBorder: OutlineInputBorder(
-            borderRadius: BorderRadius.circular(8.r),
-            borderSide: BorderSide.none,
-          ),
-          disabledBorder: OutlineInputBorder(
-            borderRadius: BorderRadius.circular(8.r),
-            borderSide: BorderSide.none,
-          ),
-          enabledBorder: showBorder ?? false
-              ? OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(8.r),
-                  borderSide: BorderSide.none,
-                )
-              : InputBorder.none,
-          errorBorder: OutlineInputBorder(
-            borderRadius: BorderRadius.circular(8.r),
-            borderSide: const BorderSide(
-              color: Colors.red,
-            ),
-          ),
-          focusedErrorBorder: OutlineInputBorder(
-            borderRadius: BorderRadius.circular(8.r),
-            borderSide: const BorderSide(
-              color: Colors.red,
-            ),
-          ),
-          hintText: hintText,
-          fillColor: backGroundColor ?? AppColors.primary.withOpacity(0.1),
-          filled: true,
-          suffixIcon: suffixIcon,
+    return TextFormField(
+      textDirection: textDirection,
+      textInputAction: TextInputAction.done,
+      keyboardType: keyboardType,
+      expands: expands ?? false,
+      autovalidateMode: AutovalidateMode.onUserInteraction,
+      onTap: onTap,
+      controller: controller,
+      onChanged: onChanged,
+      minLines: minLines,
+      maxLines: maxLines,
+      readOnly: readOnly ?? false,
+      enabled: enabled,
+      maxLength: maxLength,
+      textAlignVertical: TextAlignVertical.center,
+      textAlign: textAlign ?? TextAlign.start,
+      cursorColor: AppColors.primary,
+      decoration: InputDecoration(
+        helperText: helperText,
+        hintStyle: AppTextStyles.hintStyle(context),
+        isCollapsed: collapsed ?? true,
+        errorStyle: AppTextStyles.font14RegularText(context)
+            .copyWith(color: Colors.red),
+        labelText: labelText,
+        contentPadding: contentPadding ??
+            EdgeInsets.symmetric(horizontal: 8.w, vertical: 8.w),
+        focusedBorder: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(8.r),
+          borderSide: BorderSide.none,
         ),
-        style: AppTextStyles.fieldStyle(context),
-        obscureText: isObscureText ?? false,
-        validator: validator,
-      
+        disabledBorder: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(8.r),
+          borderSide: BorderSide.none,
+        ),
+        enabledBorder: showBorder ?? false
+            ? OutlineInputBorder(
+                borderRadius: BorderRadius.circular(8.r),
+                borderSide: BorderSide.none,
+              )
+            : InputBorder.none,
+        errorBorder: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(8.r),
+          borderSide: const BorderSide(
+            color: Colors.red,
+          ),
+        ),
+        focusedErrorBorder: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(8.r),
+          borderSide: const BorderSide(
+            color: Colors.red,
+          ),
+        ),
+        hintText: hintText,
+        fillColor: backGroundColor ?? AppColors.primary.withOpacity(0.1),
+        filled: true,
+        suffixIcon: suffixIcon,
+      ),
+      style: AppTextStyles.fieldStyle(context),
+      obscureText: isObscureText ?? false,
+      validator: validator,
     );
   }
 }

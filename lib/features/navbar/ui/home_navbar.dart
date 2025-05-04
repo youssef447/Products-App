@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
-import 'package:meal_tracking/features/navbar/controller/home_navbar_controller.dart';
+import 'package:product_tracking/features/navbar/controller/home_navbar_controller.dart';
 
 import '../../../core/theme/data/app_colors.dart';
 

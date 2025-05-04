@@ -1,6 +1,6 @@
 import 'package:get/get.dart';
-import 'package:meal_tracking/features/my_cart/data/repo/my_cart_repo.dart';
-import 'package:meal_tracking/features/my_cart/model/my_cart_model.dart';
+import 'package:product_tracking/features/my_cart/data/repo/my_cart_repo.dart';
+import 'package:product_tracking/features/my_cart/model/my_cart_model.dart';
 
 import '../../../user/controller/user_controller.dart';
 

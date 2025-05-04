@@ -1,5 +1,5 @@
 import 'package:get/get.dart';
-import 'package:meal_tracking/features/auth/login/data/repo/login_repo.dart';
+import 'package:product_tracking/features/auth/login/data/repo/login_repo.dart';
 
 import '../data/model/user_model.dart';
 

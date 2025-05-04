@@ -1,6 +1,6 @@
 import 'package:dio/dio.dart';
-import 'package:meal_tracking/core/constants/api_constants.dart';
-import 'package:meal_tracking/core/services/remote/dio_service.dart';
+import 'package:product_tracking/core/constants/api_constants.dart';
+import 'package:product_tracking/core/services/remote/dio_service.dart';
 
 class MyCartService {
   Future<Response> getMyCart({required int userId}) async {

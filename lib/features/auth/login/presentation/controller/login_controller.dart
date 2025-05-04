@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:meal_tracking/core/extensions/context_extension.dart';
-import 'package:meal_tracking/core/helpers/app_context.dart';
-import 'package:meal_tracking/core/routes/app_routes.dart';
-import 'package:meal_tracking/core/widgets/loading/loading_dialog.dart';
-import 'package:meal_tracking/features/auth/login/data/repo/login_repo.dart';
+import 'package:product_tracking/core/extensions/context_extension.dart';
+import 'package:product_tracking/core/helpers/app_context.dart';
+import 'package:product_tracking/core/routes/app_routes.dart';
+import 'package:product_tracking/core/widgets/loading/loading_dialog.dart';
+import 'package:product_tracking/features/auth/login/data/repo/login_repo.dart';
 
 class LoginController extends GetxController {
   final AuthRepo authRepo;

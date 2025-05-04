@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:meal_tracking/core/theme/data/app_text_style.dart';
-import 'package:meal_tracking/core/widgets/form_field/app_form_field.dart';
-import 'package:meal_tracking/core/widgets/spacing/vertical_space.dart';
+import 'package:product_tracking/core/theme/data/app_text_style.dart';
+import 'package:product_tracking/core/widgets/form_field/app_form_field.dart';
+import 'package:product_tracking/core/widgets/spacing/vertical_space.dart';
 
 class LabelFormField extends StatelessWidget {
   final String label;

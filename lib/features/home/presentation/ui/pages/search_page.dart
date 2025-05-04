@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 import 'package:get/get.dart';
-import 'package:meal_tracking/core/widgets/loading/app_circle_progress.dart';
-import 'package:meal_tracking/features/home/presentation/ui/pages/home_page.dart';
-import 'package:meal_tracking/features/home/presentation/ui/widgets/common/product_search_field.dart';
-import 'package:meal_tracking/features/home/presentation/ui/widgets/common/loading_products.dart';
+import 'package:product_tracking/core/widgets/loading/app_circle_progress.dart';
+import 'package:product_tracking/features/home/presentation/ui/pages/home_page.dart';
+import 'package:product_tracking/features/home/presentation/ui/widgets/common/product_search_field.dart';
+import 'package:product_tracking/features/home/presentation/ui/widgets/common/loading_products.dart';
 
 import '../../../../../core/theme/data/app_text_style.dart';
 import '../../../../../core/widgets/spacing/vertical_space.dart';

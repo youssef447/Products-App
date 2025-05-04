@@ -1,6 +1,6 @@
 import 'package:dio/dio.dart';
-import 'package:meal_tracking/core/constants/api_constants.dart';
-import 'package:meal_tracking/core/services/local/secure_storage_service.dart';
+import 'package:product_tracking/core/constants/api_constants.dart';
+import 'package:product_tracking/core/services/local/secure_storage_service.dart';
 
 abstract class TokenService {
   static Future<String?> getAccessToken() async {

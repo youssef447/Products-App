@@ -5,7 +5,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
 
 import 'package:get/get.dart';
-import 'package:meal_tracking/core/widgets/animations/scale_animation.dart';
+import 'package:product_tracking/core/widgets/animations/scale_animation.dart';
 
 import '../../../../../../core/assets/app_assets.dart';
 import '../../../../../../core/helpers/validation_helper.dart';

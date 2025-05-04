@@ -1,8 +1,8 @@
 import 'package:dartz/dartz.dart';
-import 'package:meal_tracking/core/error_handler/error_handler_mixin.dart';
-import 'package:meal_tracking/core/error_handler/failure.dart';
+import 'package:product_tracking/core/error_handler/error_handler_mixin.dart';
+import 'package:product_tracking/core/error_handler/failure.dart';
 
-import 'package:meal_tracking/features/home/data/model/product_model.dart';
+import 'package:product_tracking/features/home/data/model/product_model.dart';
 
 import '../service/product_service.dart';
 

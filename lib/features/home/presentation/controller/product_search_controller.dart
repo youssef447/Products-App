@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:meal_tracking/features/home/data/repo/product_remote_repo.dart';
+import 'package:product_tracking/features/home/data/repo/product_remote_repo.dart';
 
 import '../../data/model/product_model.dart';
 

@@ -6,12 +6,12 @@ import 'package:flutter_rating/flutter_rating.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 
-import 'package:meal_tracking/core/theme/data/app_text_style.dart';
-import 'package:meal_tracking/core/widgets/animations/horizontal_animation.dart';
-import 'package:meal_tracking/core/widgets/spacing/horizontal_space.dart';
-import 'package:meal_tracking/core/widgets/spacing/vertical_space.dart';
-import 'package:meal_tracking/features/home/data/model/product_model.dart';
-import 'package:meal_tracking/features/home/presentation/controller/home_page_controller.dart';
+import 'package:product_tracking/core/theme/data/app_text_style.dart';
+import 'package:product_tracking/core/widgets/animations/horizontal_animation.dart';
+import 'package:product_tracking/core/widgets/spacing/horizontal_space.dart';
+import 'package:product_tracking/core/widgets/spacing/vertical_space.dart';
+import 'package:product_tracking/features/home/data/model/product_model.dart';
+import 'package:product_tracking/features/home/presentation/controller/home_page_controller.dart';
 
 import '../../../core/theme/data/app_colors.dart';
 import '../../../core/widgets/buttons/app_default_button.dart';

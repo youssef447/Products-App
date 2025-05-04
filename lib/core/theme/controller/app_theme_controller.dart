@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_statusbarcolor_ns/flutter_statusbarcolor_ns.dart';
 import 'package:get/get.dart';
-import 'package:meal_tracking/core/services/local/app_cache_service.dart';
+import 'package:product_tracking/core/services/local/app_cache_service.dart';
 
 import '../data/app_theme.dart';
 

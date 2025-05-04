@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:meal_tracking/core/routes/route_navigation_helper.dart';
-import 'package:meal_tracking/features/auth/login/presentation/ui/pages/login_page.dart';
-import 'package:meal_tracking/features/home/presentation/ui/pages/search_page.dart';
-import 'package:meal_tracking/features/navbar/ui/home_navbar.dart';
+import 'package:product_tracking/core/routes/route_navigation_helper.dart';
+import 'package:product_tracking/features/auth/login/presentation/ui/pages/login_page.dart';
+import 'package:product_tracking/features/home/presentation/ui/pages/search_page.dart';
+import 'package:product_tracking/features/navbar/ui/home_navbar.dart';
 
 import '../../features/product_details/pages/product_details_page.dart';
 import 'app_routes.dart';

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:get/get.dart';
-import 'package:meal_tracking/core/widgets/animations/scale_animation.dart';
-import 'package:meal_tracking/core/widgets/spacing/vertical_space.dart';
+import 'package:product_tracking/core/widgets/animations/scale_animation.dart';
+import 'package:product_tracking/core/widgets/spacing/vertical_space.dart';
 
 import '../../assets/app_assets.dart';
 import '../../theme/data/app_text_style.dart';

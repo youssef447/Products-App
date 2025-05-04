@@ -1,5 +1,5 @@
 import 'package:dio/dio.dart';
-import 'package:meal_tracking/core/services/remote/interceptors/jwt_interceptor.dart';
+import 'package:product_tracking/core/services/remote/interceptors/jwt_interceptor.dart';
 
 import 'interceptors/debounce_interceptor.dart';
 

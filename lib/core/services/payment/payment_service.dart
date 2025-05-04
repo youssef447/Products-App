@@ -1,7 +1,7 @@
 import 'package:dartz/dartz.dart';
 import 'package:dio/dio.dart';
 import 'package:flutter_stripe/flutter_stripe.dart';
-import 'package:meal_tracking/core/error_handler/failure.dart';
+import 'package:product_tracking/core/error_handler/failure.dart';
 
 import 'secret.dart';
 

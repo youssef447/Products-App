@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:meal_tracking/core/widgets/dialog/app_default_dialog.dart';
-import 'package:meal_tracking/core/widgets/loading/loading_dialog.dart';
-import 'package:meal_tracking/features/my_cart/data/repo/my_cart_repo.dart';
-import 'package:meal_tracking/features/user/controller/user_controller.dart';
+import 'package:product_tracking/core/widgets/dialog/app_default_dialog.dart';
+import 'package:product_tracking/core/widgets/loading/loading_dialog.dart';
+import 'package:product_tracking/features/my_cart/data/repo/my_cart_repo.dart';
+import 'package:product_tracking/features/user/controller/user_controller.dart';
 import 'package:showcaseview/showcaseview.dart';
 
-import 'package:meal_tracking/core/services/local/app_cache_service.dart';
-import 'package:meal_tracking/features/home/data/model/product_model.dart';
+import 'package:product_tracking/core/services/local/app_cache_service.dart';
+import 'package:product_tracking/features/home/data/model/product_model.dart';
 
 import '../../../../core/helpers/app_context.dart';
 import '../../data/repo/product_remote_repo.dart';

@@ -7,9 +7,9 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:meal_tracking/core/routes/app_routes.dart';
+import 'package:product_tracking/core/routes/app_routes.dart';
 
-import 'package:meal_tracking/main.dart';
+import 'package:product_tracking/main.dart';
 
 void main() {
   testWidgets('Counter increments smoke test', (WidgetTester tester) async {

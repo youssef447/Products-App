@@ -1,4 +1,4 @@
-import 'package:meal_tracking/core/assets/app_assets.dart';
+import 'package:product_tracking/core/assets/app_assets.dart';
 
 class UserModel {
   int id;

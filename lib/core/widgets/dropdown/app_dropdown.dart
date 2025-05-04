@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:get/get.dart';
-import 'package:meal_tracking/core/theme/controller/app_theme_controller.dart';
-import 'package:meal_tracking/core/theme/data/app_text_style.dart';
+import 'package:product_tracking/core/theme/controller/app_theme_controller.dart';
+import 'package:product_tracking/core/theme/data/app_text_style.dart';
 
 import '../../assets/app_assets.dart';
 import '../../helpers/app_context.dart';

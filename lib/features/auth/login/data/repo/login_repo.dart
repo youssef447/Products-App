@@ -1,7 +1,7 @@
 import 'package:dartz/dartz.dart';
-import 'package:meal_tracking/features/auth/login/data/data_source/login_service.dart';
-import 'package:meal_tracking/features/auth/login/data/data_source/token_service.dart';
-import 'package:meal_tracking/features/user/data/model/user_model.dart';
+import 'package:product_tracking/features/auth/login/data/data_source/login_service.dart';
+import 'package:product_tracking/features/auth/login/data/data_source/token_service.dart';
+import 'package:product_tracking/features/user/data/model/user_model.dart';
 
 import '../../../../../core/error_handler/error_handler_mixin.dart';
 import '../../../../../core/error_handler/failure.dart';
