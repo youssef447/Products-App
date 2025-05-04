@@ -10,7 +10,7 @@ on:
 jobs:
   build:
     name: Build & Release
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
@@ -32,7 +32,9 @@ jobs:
 
      # If you have an additional Dart config file
       - name: Create payment_secret.dart
-        run: echo "${{ secrets.PAYMENT_SECRET_DART }}" | base64 -d > lib/core/services/payment/secret.dart
+        shell: pwsh
+        run: |
+    [IO.File]::WriteAllBytes("lib/core/services/payment/secret.dart", [Convert]::FromBase64String("${{ secrets.PAYMENT_SECRET_DART }}"))
 
 
         
