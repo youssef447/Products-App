@@ -45,6 +45,7 @@ class SearchProductsPage extends GetView<SearchProductsController> {
                     return MasonryGridView.builder(
                       crossAxisSpacing: 8.w,
                       shrinkWrap: true,
+                      physics: const NeverScrollableScrollPhysics(),
                       clipBehavior: Clip.none,
                       mainAxisSpacing: 10.h,
                       padding: EdgeInsets.only(bottom: 8.w),

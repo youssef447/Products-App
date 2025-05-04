@@ -118,6 +118,7 @@ class HomePage extends GetView<HomePageController> {
                         clipBehavior: Clip.antiAliasWithSaveLayer,
                         mainAxisSpacing: 10.h,
                         shrinkWrap: true,
+                        physics: const NeverScrollableScrollPhysics(),
                         gridDelegate:
                             const SliverSimpleGridDelegateWithFixedCrossAxisCount(
                           crossAxisCount: 2,

@@ -43,58 +43,62 @@ class MyCartPage extends StatelessWidget {
           }
           return Padding(
             padding: EdgeInsets.all(8.w),
-            child: Column(
-              children: [
-                ListView.separated(
-                  shrinkWrap: true,
-                  itemBuilder: (context, index) {
-                    final products = controller.myCart!.products[index];
-                    return CartProductCard(
-                      product: products,
-                    );
-                  },
-                  separatorBuilder: (context, index) => const VerticalSpace(8),
-                  itemCount: controller.myCart!.products.length,
-                ),
-                const VerticalSpace(8),
-                Row(
-                  children: [
-                    Text(
-                      'Total Price: ',
-                      style: AppTextStyles.font14BoldText(context),
-                    ),
-                    const HorizontalSpace(8),
-                    RichText(
-                      text: TextSpan(
-                        children: [
-                          TextSpan(
-                            text: '\$',
-                            children: [
-                              TextSpan(
-                                text:
-                                    controller.myCart!.total.toStringAsFixed(2),
-                                style: AppTextStyles.font18BoldText(context)
-                                    .copyWith(),
-                              ),
-                            ],
+            child: SingleChildScrollView(
+              child: Column(
+                children: [
+                  ListView.separated(
+                    shrinkWrap: true,
+                    physics: const NeverScrollableScrollPhysics(),
+                    itemBuilder: (context, index) {
+                      final products = controller.myCart!.products[index];
+                      return CartProductCard(
+                        product: products,
+                      );
+                    },
+                    separatorBuilder: (context, index) =>
+                        const VerticalSpace(8),
+                    itemCount: controller.myCart!.products.length,
+                  ),
+                  const VerticalSpace(8),
+                  Row(
+                    children: [
+                      Text(
+                        'Total Price: ',
+                        style: AppTextStyles.font14BoldText(context),
+                      ),
+                      const HorizontalSpace(8),
+                      RichText(
+                        text: TextSpan(
+                          children: [
+                            TextSpan(
+                              text: '\$',
+                              children: [
+                                TextSpan(
+                                  text: controller.myCart!.total
+                                      .toStringAsFixed(2),
+                                  style: AppTextStyles.font18BoldText(context)
+                                      .copyWith(),
+                                ),
+                              ],
+                            ),
+                          ],
+                          style: AppTextStyles.font14BoldText(context).copyWith(
+                            color: Colors.orange,
                           ),
-                        ],
-                        style: AppTextStyles.font14BoldText(context).copyWith(
-                          color: Colors.orange,
                         ),
                       ),
-                    ),
-                  ],
-                ),
-                const VerticalSpace(16),
-                AppDefaultButton(
-                    text: 'Checkout',
-                    onPressed: () {
-                      AppResultDialog.success(
-                        msg: 'Transaction made successfully',
-                      );
-                    })
-              ],
+                    ],
+                  ),
+                  const VerticalSpace(16),
+                  AppDefaultButton(
+                      text: 'Checkout',
+                      onPressed: () {
+                        AppResultDialog.success(
+                          msg: 'Transaction made successfully',
+                        );
+                      })
+                ],
+              ),
             ),
           );
         }),

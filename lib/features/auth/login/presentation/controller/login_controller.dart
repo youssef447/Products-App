@@ -4,7 +4,9 @@ import 'package:product_tracking/core/extensions/context_extension.dart';
 import 'package:product_tracking/core/helpers/app_context.dart';
 import 'package:product_tracking/core/routes/app_routes.dart';
 import 'package:product_tracking/core/widgets/loading/loading_dialog.dart';
+import 'package:product_tracking/features/auth/login/data/data_source/token_service.dart';
 import 'package:product_tracking/features/auth/login/data/repo/login_repo.dart';
+import 'package:product_tracking/features/user/controller/user_controller.dart';
 
 class LoginController extends GetxController {
   final AuthRepo authRepo;
@@ -38,8 +40,20 @@ class LoginController extends GetxController {
     hideLoadingIndicator();
     res.fold(
       (ifLeft) => Get.snackbar('Error', ifLeft.message),
-      (ifRight) => AppContext.getContext!.navigateTo(AppRoutes.homeNavbar),
+      (ifRight) async {
+        await getCurrentUser();
+        AppContext.getContext!.navigateTo(AppRoutes.homeNavbar);
+      },
     );
+  }
+
+  Future<bool> getCurrentUser() async {
+    if (await TokenService.getAccessToken() == null) return false;
+    await Get.find<UserController>().getCurrentUser();
+    if (Get.find<UserController>().user == null) {
+      return false;
+    }
+    return true;
   }
 
   @override
