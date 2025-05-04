@@ -13,6 +13,6 @@ abstract class AppAssets {
   static const String search = 'assets/vectors/search.svg';
   static const String edit = 'assets/vectors/edit.svg';
   static const String cancel = 'assets/vectors/cancel.svg';
-  static const String noMeal = 'assets/vectors/noMeal.svg';
+  static const String noData = 'assets/vectors/noMeal.svg';
   static const String dropdown = 'assets/vectors/dropdown.svg';
 }

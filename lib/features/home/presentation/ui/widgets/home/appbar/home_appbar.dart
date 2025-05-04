@@ -13,33 +13,28 @@ class HomeAppbar extends GetView<HomePageController>
       ),
       actions: [
         GetBuilder<AppThemeController>(builder: (themeController) {
-          return HomeShowcase(
-            showcasekey: controller.showcaseTheme,
-            type: ShowcaseTypes.first,
-            description: '  toggle Light/Dark theme',
-            child: AnimatedSwitcher(
-              duration: const Duration(milliseconds: 650),
-              transitionBuilder: (child, anim) => RotationTransition(
-                turns: child.key == const ValueKey('dark')
-                    ? Tween<double>(begin: 0.85, end: 1).animate(anim)
-                    : Tween<double>(begin: 0.75, end: 1).animate(anim),
-                child: ScaleTransition(
-                  scale: anim,
-                  child: child,
-                ),
+          return AnimatedSwitcher(
+            duration: const Duration(milliseconds: 650),
+            transitionBuilder: (child, anim) => RotationTransition(
+              turns: child.key == const ValueKey('dark')
+                  ? Tween<double>(begin: 0.85, end: 1).animate(anim)
+                  : Tween<double>(begin: 0.75, end: 1).animate(anim),
+              child: ScaleTransition(
+                scale: anim,
+                child: child,
               ),
-              child: Icon(
-                  key: themeController.isDark
-                      ? const ValueKey('dark')
-                      : const ValueKey('light'),
-                  themeController.isDark
-                      ? Icons.nightlight_round_sharp
-                      : Icons.wb_sunny,
-                  size: 20.sp,
-                  color: themeController.isDark
-                      ? Colors.white
-                      : const Color.fromARGB(255, 203, 107, 4)),
             ),
+            child: Icon(
+                key: themeController.isDark
+                    ? const ValueKey('dark')
+                    : const ValueKey('light'),
+                themeController.isDark
+                    ? Icons.nightlight_round_sharp
+                    : Icons.wb_sunny,
+                size: 20.sp,
+                color: themeController.isDark
+                    ? Colors.white
+                    : const Color.fromARGB(255, 203, 107, 4)),
           );
         }),
         GetBuilder<AppThemeController>(builder: (themeController) {

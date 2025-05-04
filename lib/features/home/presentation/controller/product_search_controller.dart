@@ -74,23 +74,6 @@ class SearchProductsController extends GetxController {
     }
   }
 
-  /*  filterMeals(String value) async {
-    if (value.isNotEmpty) {
-      loading = true;
-      update(['home']);
-      final result = await mealRemoteRepo.filterMeals(value);
-
-      meals = result.fold((l) {
-        Get.snackbar('Error', l.message);
-        return [];
-      }, (r) => r);
-
-      loading = false;
-
-      update(['home']);
-    }
-  } */
-
   //----------Category-------------
   String selectedCategory = '';
   toggleCategoryFilter(String category) {

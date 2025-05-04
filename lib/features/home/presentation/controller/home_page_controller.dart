@@ -4,12 +4,9 @@ import 'package:product_tracking/core/widgets/dialog/app_default_dialog.dart';
 import 'package:product_tracking/core/widgets/loading/loading_dialog.dart';
 import 'package:product_tracking/features/my_cart/data/repo/my_cart_repo.dart';
 import 'package:product_tracking/features/user/controller/user_controller.dart';
-import 'package:showcaseview/showcaseview.dart';
 
-import 'package:product_tracking/core/services/local/app_cache_service.dart';
 import 'package:product_tracking/features/home/data/model/product_model.dart';
 
-import '../../../../core/helpers/app_context.dart';
 import '../../data/repo/product_remote_repo.dart';
 
 class HomePageController extends GetxController {
@@ -37,7 +34,6 @@ class HomePageController extends GetxController {
     );
     update();
 
-    handleShowcase();
     scrollController.addListener(() {
       if (scrollController.position.pixels ==
           scrollController.position.maxScrollExtent) {
@@ -123,22 +119,5 @@ class HomePageController extends GetxController {
   selectNavIndex(int index) {
     currentNavIndex = index;
     update();
-  }
-  //-------- Showcase --------//
-
-  final GlobalKey<State> showcaseTheme = GlobalKey<State>();
-  final GlobalKey<State> showcaseAdd = GlobalKey<State>();
-  handleShowcase() {
-    if (AppCacheService.getData(key: 'launched') == null) {
-      WidgetsBinding.instance.addPostFrameCallback(
-        (_) {
-          ShowCaseWidget.of(AppContext.getContext!).startShowCase([
-            showcaseTheme,
-            showcaseAdd,
-          ]);
-          AppCacheService.saveData(key: 'launched', value: true);
-        },
-      );
-    }
   }
 }

@@ -31,7 +31,7 @@ class NoData extends StatelessWidget {
             child: SvgPicture.asset(
               height: Get.height * 0.3,
               width: Get.width * 0.3,
-              image ?? AppAssets.noMeal,
+              image ?? AppAssets.noData,
             ),
           ),
         ),

@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
-import 'package:meal_tracking/core/routes/app_routes.dart';
-import 'package:meal_tracking/core/routes/route_generator.dart';
-import 'package:meal_tracking/features/auth/login/data/data_source/token_service.dart';
-import 'package:meal_tracking/features/user/controller/user_controller.dart';
+import 'core/routes/app_routes.dart';
+import 'core/routes/route_generator.dart';
+import 'features/auth/login/data/data_source/token_service.dart';
+import 'features/user/controller/user_controller.dart';
 import 'package:showcaseview/showcaseview.dart';
 
 import 'core/di/di.dart';
@@ -46,7 +46,7 @@ class MyApp extends StatelessWidget {
           return ShowCaseWidget(builder: (context) {
             return GetBuilder<AppThemeController>(builder: (controller) {
               return GetMaterialApp(
-                title: 'Meal Tracker',
+                title: 'Products Tracker',
                 debugShowCheckedModeBanner: false,
                 theme: controller.currentTheme,
                 navigatorKey: AppContext.appNavKey,
