@@ -34,7 +34,7 @@ jobs:
       - name: Create payment_secret.dart
         shell: pwsh
         run: |
-    [IO.File]::WriteAllBytes("lib/core/services/payment/secret.dart", [Convert]::FromBase64String("${{ secrets.PAYMENT_SECRET_DART }}"))
+            [IO.File]::WriteAllBytes("lib/core/services/payment/secret.dart", [Convert]::FromBase64String("${{ secrets.PAYMENT_SECRET_DART }}"))
 
 
         
