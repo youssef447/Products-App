@@ -16,6 +16,7 @@ class ProductReviews extends StatelessWidget {
         const VerticalSpace(8),
         ListView.separated(
             shrinkWrap: true,
+            physics: const NeverScrollableScrollPhysics(),
             separatorBuilder: (context, index) => const Divider(
                   color: Colors.grey,
                 ),
