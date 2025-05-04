@@ -18,6 +18,7 @@ class MyCartsController extends GetxController {
   MyCartModel? myCart;
   bool loading = true;
   getMyCart() async {
+    await Get.find<UserController>().getCurrentUser();
     final userId = Get.find<UserController>().user!.id;
     final res = await myCartRepo.getMyCart(userId: userId);
     loading = false;
